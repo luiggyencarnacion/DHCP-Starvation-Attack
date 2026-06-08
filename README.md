@@ -29,7 +29,7 @@
 
 1. [Objetivo del Laboratorio](#-objetivo-del-laboratorio)
 2. [Objetivo del Script](#-objetivo-del-script)
-3. [Requisitos](#-requisitos)
+3. [Requisitos](#-requisitos-para-utilizar-la-herramienta)
 4. [Instalación](#-instalación)
 5. [Documentación de la Red](#-documentación-de-la-red)
 6. [Funcionamiento del Script](#-funcionamiento-del-script)
@@ -75,8 +75,8 @@ El script `dhcp_starvation.py` genera y envía de forma continua paquetes DHCP D
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/<tu-usuario>/dhcp-starvation-attack.git
-cd dhcp-starvation-attack
+git clone https://github.com/luiggyencarnacion/DHCP-Starvation-Attack.git
+cd DHCP-Starvation-Attack
 
 # 2. Crear entorno virtual
 python3 -m venv venv
@@ -110,11 +110,11 @@ scapy>=2.5.0
                     │  SW-1   │
                     └──┬───┬──┘
                Gig0/2  │   │  Gig0/1
-              ┌─────────┘   └──────────┐
+              ┌────────┘   └───────────┐
          ┌────┴──────┐            ┌────┴────┐
          │KaliLinux-1│            │   PC1   │
          │ Atacante  │            │ Víctima │
-         │10.6.63.13 │            │(sin IP) │
+         │10.6.63.13 │            │ (sin IP)│
          └───────────┘            └─────────┘
                e0
 
