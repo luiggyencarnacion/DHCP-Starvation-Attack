@@ -111,16 +111,18 @@ scapy>=2.5.0
                     └──┬───┬──┘
                Gig0/2  │   │  Gig0/1
               ┌────────┘   └───────────┐
-         ┌────┴──────┐            ┌────┴────┐
-         │KaliLinux-1│            │   PC1   │
-         │ Atacante  │            │ Víctima │
-         │10.6.63.13 │            │ (sin IP)│
-         └───────────┘            └─────────┘
+         ┌────┴────────┐          ┌────┴─────┐
+         │ KaliLinux-1 │          │   PC1    │
+         │  Atacante   │          │ Víctima  │
+         │ 10.6.63.13  │          │ (sin IP) │
+         └─────────────┘          └──────────┘
                e0
 
   KaliLinux-1 envía miles de DISCOVERs → pool de R-1 se agota
   PC1 solicita IP → R-1 responde: pool vacío → PC1 sin conectividad
 ```
+
+![Topología GNS3](images/01_topologia_gns3.png)
 
 ### Tabla de Direccionamiento
 
@@ -218,7 +220,7 @@ Ether(src=fake_mac, dst="ff:ff:ff:ff:ff:ff")
 ## 🚀 Uso y Ejecución
 
 ```bash
-sudo python3 dhcp_starvation.py
+sudo python3 dhcp_starvation_attack.py
 ```
 
 **Interacción esperada:**
@@ -320,15 +322,6 @@ evidencias/
 ## 🎬 Video de Demostración
 
 > 📺 **[Ver demostración en YouTube →](https://youtu.be/wa2fMp5PDNQ?si=WAiJTSkv2enVr7SJ)**
-
-- ✅ Topología en GNS3 con nombre **Luiggy Encarnación** y matrícula **2025-0663**
-- ✅ Hora y fecha del sistema visibles
-- ✅ Cara y voz del autor
-- ✅ Tabla de IPs siendo asignadas en tiempo real
-- ✅ Verificación de pool agotado (`show ip dhcp pool`)
-- ✅ PC1 sin capacidad de obtener IP
-- ✅ Aplicación de port-security y DHCP Snooping rate limit
-- ⏱️ Duración máxima: 5 minutos
 
 ---
 
