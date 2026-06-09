@@ -29,9 +29,9 @@
 
 1. [Objetivo del Laboratorio](#-objetivo-del-laboratorio)
 2. [Objetivo del Script](#-objetivo-del-script)
-3. [Requisitos](#-requisitos-para-utilizar-la-herramienta)
-4. [Instalación](#-instalación)
-5. [Documentación de la Red](#-documentación-de-la-red)
+3. [Requisitos](#requisitos-para-utilizar-la-herramienta)
+4. [Instalación](#️-instalación)
+5. [Documentación de la Red](#️-documentación-de-la-red)
 6. [Funcionamiento del Script](#-funcionamiento-del-script)
 7. [Uso y Ejecución](#-uso-y-ejecución)
 8. [Contramedidas](#-contramedidas)
