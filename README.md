@@ -104,7 +104,7 @@ scapy>=2.5.0
                     ┌─────────┐
                     │   R-1   │  10.6.63.1/24
                     └────┬────┘  Pool DHCP: 10.6.63.0/24
-                         │ g0/0           ← objetivo del ataque
+                         │ Gig0/0  ← objetivo del ataque
                          │ Gig0/0
                     ┌────┴────┐
                     │  SW-1   │
